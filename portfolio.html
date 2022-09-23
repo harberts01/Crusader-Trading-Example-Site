@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crusader Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
 
 </head>
 <body>
+<div class="topNav-logo">
+    <ul class="nav-menu">
+        <!-- <input type="text" placeholder="Search.."> -->
+        <li><a href="index.html" class="nav-links"><b>Home</b></a></li>
+        <li><a href="about.html" class="nav-links"><b>About</b></a></li>
+        <li><a href="photos.html" class="nav-links"><b>Live Market</b></a></li>
+        <li><a href="contact.html" class="nav-links"><b>Contact Us!</b></a></li>
+    </ul>
+        <img class="crusaderlogo" src="images/L8fcSDU2_400x400.jpg">
+            <h1 class="mainHeader">CRUSADER TRADING & INVESTING</h1>
+</div>
+<hr>
+<div id="sc-ticker-tape"></div>
+<script src="https://softcapital.com/widget/widget.js"></script>
+<script>
+createSoftCapitalWidget("TickerTape", "sc-ticker-tape", {
+symbols:"AMD,BP,LUMN,NLY,T,C,QYLD",
+rows:1,logo:true,speed:12,mode:"chain",imgHeight:15
+});
+</script>
+
+<div class="portfolioHeader">
+    <h2>Consistent Growth Portfolio</h2>
+</div>
+
     <div class="portfolio">
-    
         <table>
-            <h2>Consistent Growth Portfolio Example</h2>
                 <tr>
                     <th>Security</th>
                     <th>Cost Average</th>
